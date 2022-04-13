@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: #141414;
+}
+
+/* .netflix-originals {
+  
+ object-fit: cover;
+  width: 250px;
+  height: 400px;
+  transition: transform 450ms;
+  margin-left: 12px;
+}
+
+.netflix-originals:hover{
+    transform: scale(1.08);
+    opacity: 1;
+    cursor: pointer;
+} */
