@@ -1,5 +1,3 @@
-import axios from "axios"
-
 const API_KEY =  "65b40a9c567576f19103f6e379603b1e";
 
 const requests = {
@@ -11,6 +9,7 @@ const requests = {
     fetchHorrorMovies: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
     fetchRomanceMovies: `/discover/movie?api_key=${API_KEY}&with_genres=10749`,
     fetchDocumentariesMovies: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
+    fetchPopularMovies:`/movie/popular?api_key=${API_KEY}&language=en-US&page=1`
   };
 
   export default requests

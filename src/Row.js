@@ -44,18 +44,18 @@ function Row({title, fetchUrl, isLargeRow}) {
         FetchData();
     },[fetchUrl])
 
-    console.log(movies)
+  
 
     const mappedMovies = movies.map(movie=>(
         <>
-        <img key={movie.id} className={`row__poster ${ isLargeRow&& "row__posterLarge"}`} src={`${base_url}${ isLargeRow ? movie.poster_path :  movie.backdrop_path}`} alt={movie.name}/>
+        <img key={movie.id} className={ `row__poster ${ isLargeRow && "row__posterLarge"} `} src={`${base_url}${ isLargeRow ? movie.poster_path :  movie.backdrop_path}`} alt={movie.name}/>
         </>
     ))
 
 
 
     
-    console.log(movies)
+
   return (
     <>
     <div onWheel={(event)=>{scrollWheel(event)}} className="row">

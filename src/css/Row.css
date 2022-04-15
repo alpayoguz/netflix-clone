@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -41,4 +42,58 @@ h2{
     transform: scale(1.08);
     opacity: 1;
     cursor: pointer;
+}
+.banner{
+    height: 500px;
+    object-fit: contain;
+}
+.banner__container{
+    margin-top: 10rem;
+    margin-left: 1rem;
+}
+.banner__title{
+    color: white;
+    margin-bottom: .5rem;
+    font-size: 4rem;
+}
+.banner__buttons{
+    padding: 1rem;
+}
+.banner__button{
+    padding-top: 0.8rem;
+    padding-bottom: .8rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    opacity: 1;
+    padding-left: 2rem;
+    padding-right: 2.4rem;
+    color: #fff;
+    background-color: rgba(51, 51, 51, .8);
+    font-size: 1.2rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.banner__button:hover{
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all .6s;
+}
+.banner__description{
+    width: 50vw;
+}
+.description__content{
+    font-size: .9vw;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    color: #fff;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Noto Sans', sans-serif;
+    max-height: 10rem;
+    line-height: 1.6rem;
+}
+.banner__fade__bottom{
+    height: 600px;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61), #111);
 }
