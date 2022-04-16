@@ -3,10 +3,16 @@ import { useEffect, useState } from "react";
 import instance from "./axios";
 import "./css/Row.css"
 
+
+
 function Row({title, fetchUrl, isLargeRow}) {
   const [movies, setMovie] = useState([])
   const base_url = "https://image.tmdb.org/t/p/original/";
-
+  const opts = {
+    height: '390',
+    width: '100%',
+    autoplay:1
+  }
   function scrollWheel(event){
    
     const element = document.querySelector(".row-posters");
@@ -17,25 +23,6 @@ function Row({title, fetchUrl, isLargeRow}) {
     });
   }
 
-    //Birinci şekilde yapımı
-    // useEffect(()=>{
-    //     const fetchMovieFromAPI = async () =>{
-    //         const data = await fetch("https://api.themoviedb.org/3/discover/tv?api_key=65b40a9c567576f19103f6e379603b1e&with_networks=213")
-    //         const data2 = await data.json()
-    //         setMovie(data2)
-    //         console.log(data2);
-    //     }
-
-    //     fetchMovieFromAPI();
-    // },[])
-
-    //ikinci şekilde yapımı
-    // useEffect(()=>{
-    //     axios.get("https://api.themoviedb.org/3/discover/tv?api_key=65b40a9c567576f19103f6e379603b1e&with_networks=213")
-    //     .then(data=>setMovie(data.data))
-    // })
-
-    //üçüncü şekilde yapımı
     useEffect(()=>{
         const FetchData = async () =>{
             const data = await instance.get(fetchUrl)
@@ -63,7 +50,6 @@ function Row({title, fetchUrl, isLargeRow}) {
        <div onWheel={(event)=>{scrollWheel(event)}} className="row-posters">
             {mappedMovies}
        </div>
-
     </div>
     </>
   )
