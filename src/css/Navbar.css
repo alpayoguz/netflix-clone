@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+.navbar{
+    display: flex;
+    top: 0px;
+    position: relative;
+    background: transparent;
+    z-index: -2;
+}
+.navbar__content{
+    max-width: 1800px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.navbar__list{
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar__logo > a{
+    font-size: 1.5rem;
+    color: red;
+}
+
+.navbar__list_item > a{
+    color: white;
+    margin-left: .75rem;
+    transition: all 0.3s;
+}
+.navbar__list_item > a:hover{
+    color: #b3b3b3;
+    outline: 0
+}
+.navbar__search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar__search__item{
+    color: white;
+    cursor: pointer;
+    margin-right: 0.8rem;
+    font-size: 0.8rem;
+    transition: all 0.3s;
+}
+.navbar__search__item:hover{
+    color: #b3b3b3;
+    outline: 0;
+    transform: scale(1.08);
+}
+.search__icon{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    transition: transform 450ms;
+    margin-right: 0.8rem;
+}
+.search__icon:hover{
+    transform: scale(1.08);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media screen and (min-width:800px)
+ and (max-width:1200px) {
+    .navbar__list_item{
+        font-size: 0.7rem;
+        margin-left: .6rem;  
+    }
+    .navbar__logo{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:799.98px) {
+    .navbar__list_item{
+        font-size: 0.7rem;
+        margin-left: .6rem;  
+    }
+    .navbar__logo{
+        font-size: 0.9rem;
+    }
+}

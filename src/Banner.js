@@ -21,7 +21,7 @@ function Banner({fetchUrl}) {
     }, [fetchUrl])
    
 
-    console.log(movie)
+
 
   return (
     <>
@@ -44,7 +44,6 @@ function Banner({fetchUrl}) {
            <div className='banner__description'>
                <p className='description__content' >{movie.overview}</p>
            </div>
-            {/* movie summary */}
         </div>
         <div className='banner__fade__bottom'></div>
     </header>
